@@ -1,4 +1,4 @@
-//selecting all required elements
+
 const start_btn = document.querySelector(".start_btn button");
 const info_box = document.querySelector(".info_box");
 const exit_btn = info_box.querySelector(".buttons .quit");
@@ -7,9 +7,6 @@ const quiz_box = document.querySelector(".quiz_box");
 const result_box = document.querySelector(".result_box");
 const option_list = document.querySelector(".option_list");
 const time_line = document.querySelector("header .time_line");
-// const timeText = document.querySelector(".timer .time_left_txt");
-// const timeCount = document.querySelector(".timer .timer_sec");
-// document.querySelector(".start_btn").style.setProperty("backgroundImage", "url('https://th.bing.com/th/id/OIP.ClC3grGpNUBJKf3tJrsUGwHaE7?pid=ImgDet&rs=1')")
 
 
 // if startQuiz button clicked
@@ -412,26 +409,12 @@ function showResult() {
     quiz_box.classList.remove("activeQuiz"); //hide quiz box
     result_box.classList.add("activeResult"); //show result box
     const scoreText = result_box.querySelector(".score_text");
-    if (perrr < 50) { // if user scored more than 3
+   // if user scored more than 3
         //creating a new span tag and passing the user score number and total question number
-        let scoreTag = '<span>You have less chances of having Heart Disease<p>' + '</p><p>' + '</p></span>';
+        let scoreTag = '<span>You have  ' + '<p style="font-size: 20px;font-weight: bold;">'+perrr+'%  </p>' + ' chances of having Heart Disease<p>' + '</p><p>' + '</p></span>';
         scoreText.innerHTML = scoreTag; //adding new span tag inside score_Text
-    }
-    if (50 < perrr < 80) { // if user scored more than 1
-        let scoreTag = '<span>You have <p style="color: #76ff7a;" >low chances</p> of having Heart Disease <p>' + '</p><p>' + '</p></span>';
-        scoreText.innerHTML = scoreTag;
-    }
+    
 
-
-    if (80 < perrr < 90) { // if user scored less than 1
-        let scoreTag = '<span>You have <p style="color: #ff8c00;" >moderate</p> chances of having Heart Disease<p>' + '</p><p>' + '</p></span>';
-        scoreText.innerHTML = scoreTag;
-    }
-
-    if (90 < perrr < 100) { // if user scored less than 1
-        let scoreTag = '<span>You have <p style="color: #8b0000;" >high</p> chances of having Heart Disease<p>' + '</p><p>' + '</p></span>';
-        scoreText.innerHTML = scoreTag;
-    }
 }
 
 // function startTimer(time) {
