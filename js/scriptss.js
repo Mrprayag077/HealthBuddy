@@ -229,6 +229,13 @@ function optionSelected(answer) {
     // }
 
 
+if (perrr < 50){
+    let html = document.getElementById("timer_secid").innerHTML="fgjfbjf";
+}
+
+if (perrr > 50){
+    let html = document.getElementById("timer_secid").innerHTML="fgjjdnjvdn";
+}
 
     if (que_numb == 1) {
 
@@ -248,7 +255,6 @@ function optionSelected(answer) {
     }
 
     if (que_numb == 2) {
-
 
         if (answer.textContent == "94-120") {
             val002 = 107;
