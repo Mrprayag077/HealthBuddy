@@ -230,11 +230,11 @@ function optionSelected(answer) {
 
 
 if (perrr < 50){
-    let html = document.getElementById("timer_secid").innerHTML="fgjfbjf";
+    let html = document.getElementById("timer_secid").innerHTML="🤓";
 }
 
 if (perrr > 50){
-    let html = document.getElementById("timer_secid").innerHTML="fgjjdnjvdn";
+    let html = document.getElementById("timer_secid").innerHTML="😰";
 }
 
     if (que_numb == 1) {
